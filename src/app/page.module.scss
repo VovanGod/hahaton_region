@@ -1,0 +1,131 @@
+.fPage {
+    height: 100vh;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  padding: 0 20px;
+  padding-top: 190px;
+
+ .info {
+    color: rgb(58, 170, 53);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+     font-size: 20px;  
+     
+     span {
+        font-size: 40px;
+     }
+
+     h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.41px;
+        text-transform: uppercase;
+        margin-right: 65px;
+        color: #A0AA35;
+
+        &::first-letter {
+            color: rgb(58, 170, 53);
+        }
+
+        div {
+            display: inline;
+
+            &:first-child {
+                color: #AA3535;
+            }
+
+            &:last-child {
+                color: #4335AA;
+            }
+        }
+     }
+ }
+
+     .bear {
+        position: absolute;
+        top: 197px;
+        left: 182px;
+    }
+
+    .fox {
+        position: absolute;
+        top: 301px;
+        right: 134px;
+    }
+
+    .btn_wrapper {
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+    }
+
+    .btn {
+        border-radius: 10px;
+        background: rgb(12, 142, 0);
+        width: 330px;
+        height: 60px;
+
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: -0.41px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn_card {
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .ellipse {
+        position: absolute;
+        &:first-child {
+            filter: blur(38.5px);
+        background: #00d916;
+        width: 205px;
+        height: 205px;
+        top: -123px;
+        right: -122px;
+        }
+
+        &:nth-child(2) {
+            background: #fff700;
+            width: 187px;
+            height: 187px;
+            top: -115px;
+            left: -133px;
+             filter: blur(38.5px);
+        }
+
+        &:nth-child(3) {
+            background: #fff700;
+            width: 187px;
+            height: 187px;
+            bottom: 50px;
+            right: -68px;
+             filter: blur(38.5px);
+        }
+
+        &:nth-child(4) {
+             background: #00d916;
+            width: 205px;
+            height: 205px;
+            bottom: 120px;
+            left: -68px;
+             filter: blur(38.5px);
+        }
+    }
+}
+

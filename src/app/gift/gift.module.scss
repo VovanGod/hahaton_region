@@ -1,0 +1,184 @@
+.gift {
+    padding: 20px 15px;
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+
+    .circle {
+        background: linear-gradient(180.00deg, rgb(0, 217, 22),rgb(255, 247, 0) 100%);
+        width: 49px;
+        height: 49px;
+        text-align: left;
+        display: block;
+        border-radius: 50%;
+    }
+
+    .have {
+        margin: 33px 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 19px;
+        position: relative;
+        z-index: 3;
+
+        .main, .card {
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 0px 0px 40.4px -10px rgba(0, 0, 0, 0.25);
+            background: rgb(255, 255, 255);
+            width: 139px;
+            height: 139px;
+            padding: 18px;
+
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            text-align: left;
+
+            span {
+                border: 2px solid rgb(255, 255, 255);
+                background: rgb(58, 170, 53);
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 32px;
+                width: 34px;
+                height: 26px;
+                border-radius: 6px;
+            }
+
+            // .company {
+            //     width: 33px;
+            //     height: 33px;
+            //     border: 1px solid rgb(255, 255, 255);
+            //     background: rgb(217, 217, 217);
+            //     text-align: left;
+            //     margin-top: 10px;
+            //     border-radius: 50%;
+            // }
+
+            .coin {
+                top: -18px;
+                left: -18px;
+                position: absolute;
+                width: 37px;
+                height: 37px;
+            }
+        }
+
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.41px;
+        text-align: left;
+        position: relative;
+        z-index: 3;
+    }
+
+    .buyList {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 19px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .ellipse {
+        position: absolute;
+            filter: blur(48.5px);
+        background: #00d916;
+        width: 205px;
+        height: 205px;
+        top: 81px;
+        left: -177px;
+    }
+
+    .ellipse2 {
+        background: #fff700;
+            width: 187px;
+            height: 187px;
+            top: 200px;
+            right: -122px;
+             filter: blur(38.5px);
+             position: absolute;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 15px;
+        gap: 15px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid #f0f0f0;
+
+        img {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+        }
+    }
+
+    .info{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h3 {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 21px;
+            text-align: left;
+            margin: 0;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            margin: 0;
+            opacity: 0.7;
+        }
+
+        .buyButton {
+            background: linear-gradient(180deg, rgb(0, 217, 22), rgb(255, 247, 0));
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            align-self: flex-start;
+            margin-top: 8px;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}
