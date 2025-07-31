@@ -176,10 +176,40 @@
         }
     }
 
+    .recipientsContainer {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20px;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8));
+            pointer-events: none;
+            z-index: 2;
+        }
+    }
+
     .recipients {
       display: flex;
-      justify-content: center;
-      column-gap: 15px;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-right: 20px;
+        -webkit-overflow-scrolling: touch;
+        
+        /* Скрываем скроллбар для WebKit браузеров */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Скрываем скроллбар для Firefox */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
 
       .recipient {
         display: flex;
@@ -192,6 +222,17 @@
         background: rgb(255, 255, 255);
         width: 97px;
         height: 97px;
+            flex-shrink: 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
 
         span {
           color: rgb(0, 0, 0);

@@ -20,7 +20,7 @@ export default function Nav({activeTab = 1}) {
                     </a>
                 </li>
                 <li>
-                    <a href="/ai" className={styles.ai}>
+                    <a href="/game" className={styles.ai}>
                          <img src="/nav/ai.svg" alt="" className={styles.nav} />
                     </a>
                 </li>

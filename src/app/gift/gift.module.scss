@@ -1,5 +1,5 @@
 .gift {
-    padding: 20px 15px;
+    padding: 20px 15pX 90px 15px;
   position: relative;
   max-width: 100%;
   min-height: 100vh;
@@ -113,10 +113,10 @@
              position: absolute;
     }
 
-    .card {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         background: #ffffff;
         border-radius: 15px;
         padding: 15px;
@@ -129,7 +129,7 @@
             height: 60px;
             flex-shrink: 0;
         }
-    }
+        }
 
     .info{
         flex: 1;

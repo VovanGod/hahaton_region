@@ -48,6 +48,7 @@ export default function Home() {
                         <img src="/home/arrowGr.svg" alt="" />
                     </span>
                 </div>
+                <div className={styles.recipientsContainer}>
                 <div className={styles.recipients}>
                     <button className={styles.recipient}>
                         <Image src="/home/friend1.svg" width={48} height={48} alt="Миша" />
@@ -58,9 +59,30 @@ export default function Home() {
                         <span>Мама</span>
                     </button>
                     <button className={styles.recipient}>
-                        <Image src="/home/friend2.svg" width={48} height={48} alt="Мама" />
-                        <span>Мама</span>
+                            <Image src="/home/friend3.svg" width={48} height={48} alt="Папа" />
+                            <span>Папа</span>
+                        </button>
+                        <button className={styles.recipient}>
+                            <Image src="/home/friend1.svg" width={48} height={48} alt="Анна" />
+                            <span>Анна</span>
+                        </button>
+                        <button className={styles.recipient}>
+                            <Image src="/home/friend2.svg" width={48} height={48} alt="Бабушка" />
+                            <span>Бабушка</span>
+                        </button>
+                        <button className={styles.recipient}>
+                            <Image src="/home/friend3.svg" width={48} height={48} alt="Дедушка" />
+                            <span>Дедушка</span>
+                        </button>
+                        <button className={styles.recipient}>
+                            <Image src="/home/friend1.svg" width={48} height={48} alt="Коля" />
+                            <span>Коля</span>
+                        </button>
+                        <button className={styles.recipient}>
+                            <Image src="/home/friend2.svg" width={48} height={48} alt="Тетя" />
+                            <span>Тетя</span>
                     </button>
+                    </div>
                 </div>
             </div>
 
